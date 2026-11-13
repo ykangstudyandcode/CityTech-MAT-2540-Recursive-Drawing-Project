@@ -8,3 +8,6 @@ def DrawSquare(ax,x,y,size):
     square=Rectangle((x,y),size,size,fill=False)
     ax.add_patch(square)
 
+def DrawTri(ax,A,B,C):
+    triangle = Polygon([A,B,C],closed=True,fill=False)
+    ax.add_patch(triangle)
