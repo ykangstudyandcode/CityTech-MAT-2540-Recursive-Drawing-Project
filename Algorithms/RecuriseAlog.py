@@ -49,8 +49,8 @@ def CalTriSuc(A, B, C):
     并且将面积返回
     """
     a=np.linalg.norm(B-C)
-    b=np.linalg.norm(A-C)
-    c=np.linalg.norm(A-B)
+    b=np.linalg.norm(A-B)
+    c=np.linalg.norm(A-C)
     s=(a+b+c)/2
     S=np.sqrt(s*(s-a)*(s-b)*(s-c))
     return S
